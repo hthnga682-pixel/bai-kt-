@@ -15,7 +15,7 @@ const About = () => {
       const oTop = $(counterEl).offset().top - window.innerHeight;
       // @ts-ignore
       if (counted === 0 && $(window).scrollTop() > oTop) {
-        $('.count').each(function () {
+        $('.count').each(function (this: any) {
           // @ts-ignore
           const $this = $(this);
           const countTo = $this.attr('data-count');

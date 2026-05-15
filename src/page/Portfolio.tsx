@@ -6,7 +6,7 @@ const Portfolio = () => {
     const $ = window.jQuery;
     if (!$) return;
 
-    $(document).on('click', '.tab-btn-main a', function (e: any) {
+    $(document).on('click', '.tab-btn-main a', function (this: any, e: any) {
         e.preventDefault();
         const tabId = $(this).data('tab');
         $('.tab-btn-main a, .Tabcondent').removeClass('tab-active');
